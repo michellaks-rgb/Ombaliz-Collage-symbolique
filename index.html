@@ -1,0 +1,185 @@
+<!doctype html><html lang="fr"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#174650"><link rel="manifest" href="manifest.json"><link rel="apple-touch-icon" href="icon-192.png"><title>Mon collage symbolique · Ombaliz Thérapie</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f7f3eb;color:#173d45;font:1rem/1.55 system-ui,sans-serif}header,main,footer{max-width:960px;margin:auto;padding:20px clamp(16px,4vw,44px)}header{display:flex;justify-content:space-between;align-items:center;gap:12px}.brand{font:bold 27px Georgia}.brand small{display:block;color:#81394e;font:700 10px system-ui;letter-spacing:.28em}.hero{padding:clamp(24px,6vw,64px);border-radius:26px;background:#174650;color:#fff;position:relative;overflow:hidden}.hero:after{content:'✦';position:absolute;right:6%;top:4%;font-size:110px;color:#ffffff22;pointer-events:none}h1,h2,h3{font-family:Georgia,serif;line-height:1.12}h1{font-size:clamp(2.5rem,8vw,5rem);margin:.2em 0}h2{font-size:2rem;margin:.2em 0}.eyebrow{font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase}.hero p{max-width:510px}.panel{margin-top:18px;background:#fffdf9;border:1px solid #e4dbcc;border-radius:22px;padding:clamp(16px,4vw,36px)}nav,.actions,.chips{display:flex;gap:8px;flex-wrap:wrap}nav{margin-top:22px}button,input,textarea,select{font:inherit}button{cursor:pointer;border:1px solid #b7c6c3;background:#fff;color:#173d45;padding:9px 13px;min-height:44px;border-radius:12px}button[aria-current],.primary{background:#81394e;color:white;border-color:#81394e}button[aria-pressed=true]{background:#dbece4;border-color:#174650}label{display:block;font-weight:650;margin-top:14px}input:not([type=file]),select,textarea{display:block;width:100%;padding:10px;border:1px solid #a7b6b2;border-radius:10px;background:white;color:#173d45}textarea{min-height:80px}.hint{font-size:.92rem;color:#435b60}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr));gap:14px;margin:18px 0}.card{background:#f2e8dc;border-radius:16px;padding:16px;overflow-wrap:anywhere}.card:nth-child(2n){background:#e3eee7}.card:nth-child(3n){background:#f2e3e8}.card p{white-space:pre-wrap}.card img{width:100%;height:180px;object-fit:contain;background:#ffffff65;border-radius:10px}.symbol{font-size:3rem;text-align:center}.actions{margin-top:20px}a{color:inherit}details{margin-top:12px}summary{cursor:pointer}.examples{background:#edf3ed;border-radius:14px;padding:12px 16px}.error{color:#81394e}footer{font-size:.9rem}button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid #b37a24;outline-offset:2px}@media print{header,.hero,nav,footer,.actions,.screen,.panel>label,.panel>select,.panel>input,.panel>.chips,.panel>#image-status,.panel>.compose-label{display:none!important}main,.panel{margin:0;padding:0;border:0}body{background:white}.card{break-inside:avoid;print-color-adjust:exact}}
+.hero{display:grid;grid-template-columns:1.25fr 1fr;align-items:center;gap:18px;background:radial-gradient(ellipse at 100% 0%,#376e71,#174650 70%)}
+.hero:after{display:none}.hero-art{width:100%;max-width:350px;justify-self:center;overflow:visible}.hero h1{font-size:clamp(2.5rem,7vw,4.8rem)}
+.stage-art{float:right;width:clamp(94px,23%,165px);margin:-5px 0 12px 18px;transform:rotate(4deg)}.panel{display:flow-root}.panel form,.panel .grid,.panel .examples{clear:both}.panel form{padding-top:4px}
+nav{padding:10px;background:#efe6d8;border-radius:16px}nav button{border-color:transparent;background:#fffdf9}nav button[aria-current]{background:#81394e}
+.card{position:relative;border:1px solid #dfd2c3;box-shadow:0 3px 0 #21404516}.card:before{content:'';position:absolute;top:-5px;left:calc(50% - 22px);width:44px;height:12px;background:#d4ae6c77;transform:rotate(-7deg);pointer-events:none}
+@media(max-width:550px){.hero{grid-template-columns:1fr;gap:0}.hero-art{max-width:215px}.stage-art{width:96px;margin-left:10px}}
+@media print{.stage-art{display:none}}
+.symbol-palette{clear:both;margin:18px 0}.symbol-palette details{padding:10px 12px;border-radius:12px;background:#f4ebdf}.symbol-palette summary{font-weight:700}.symbol-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(138px,100%),1fr));gap:8px;margin-top:10px}.symbol-grid button{display:flex;flex-direction:column;align-items:center;text-align:center;padding:8px}.symbol-grid svg,.symbol svg{width:55px;height:66px;display:block;margin:auto}.symbol-grid span{color:#81394e;font-size:.88rem}.symbol-grid small{font-size:.78rem;line-height:1.3;margin-top:5px}.symbol-caption{display:block;font-size:.9rem;font-weight:650}@media print{.symbol-palette{display:none}}.chosen-symbols{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:10px 0}.chosen-symbols .symbol{flex:1 1 65px;max-width:130px;text-align:center}</style>
+<header><img src="ombaliz-logo.png" width="145" height="90" style="object-fit:contain" alt="Ombaliz Thérapie"><button id="install">Installer</button></header>
+<main><div class="hero"><div><div class="eyebrow">Atelier de ressources</div><h1>Mon collage<br>symbolique</h1><p>Composez un tableau de personnes ou de personnages qui vous inspirent. Leurs gestes, leurs qualités ou leurs valeurs peuvent vous rappeler ce qui compte pour vous.</p></div><svg class="hero-art" viewBox="0 0 340 263" aria-hidden="true">
+<defs><pattern id="paper-dots" width="9" height="9" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#174650" opacity=".18"/></pattern></defs>
+<path d="M26 68Q44 10 131 29T271 43Q337 54 312 124T305 214Q245 254 155 230T42 236Q7 206 23 154T26 68" fill="#b9d6c8"/>
+<path d="M26 68Q44 10 131 29T271 43Q337 54 312 124T305 214Q245 254 155 230T42 236Q7 206 23 154T26 68" fill="url(#paper-dots)"/>
+<g transform="translate(49 49) rotate(-12 53 65)">
+<rect x="4" y="6" width="108" height="131" rx="4" fill="#174650" opacity=".22"/><rect width="108" height="131" rx="4" fill="#fffbef"/><rect x="9" y="10" width="90" height="93" rx="3" fill="#edd2d5"/><path d="M18 102Q24 72 53 73T89 102" fill="#81394e"/><circle cx="53" cy="52" r="20" fill="#cf8a66"/><path d="M34 52Q27 22 54 26Q76 25 74 51Q61 46 55 34Q49 49 34 52" fill="#362a35"/><path d="M48 59q5 5 10 0" fill="none" stroke="#693b3d" stroke-width="2"/><path d="M27 116h54" stroke="#ba8f83" stroke-width="2" stroke-linecap="round"/><path d="M31 -4h44l-3 15H29z" fill="#dfb777" opacity=".85"/></g>
+<g transform="translate(182 44) rotate(13 54 65)">
+<rect x="5" y="6" width="108" height="131" rx="4" fill="#174650" opacity=".22"/><rect width="108" height="131" rx="4" fill="#fffbef"/><rect x="9" y="10" width="90" height="93" rx="3" fill="#eeddb2"/><circle cx="74" cy="34" r="10" fill="#d78f5f"/><path d="M10 101L37 50 60 84 74 66 99 102Z" fill="#3b7270"/><path d="M29 65l8-15 10 15-9-4z" fill="#fffbef"/><path d="M27 116h54" stroke="#ba8f83" stroke-width="2" stroke-linecap="round"/><path d="M34 -4h44l-3 15H31z" fill="#d99da8" opacity=".85"/></g>
+<g transform="translate(105 174) rotate(-6)"><path d="M0 0h135v51H0l5-9-5-8 5-10-5-9z" fill="#f6e6b6"/><text x="70" y="31" text-anchor="middle" fill="#81394e" font-family="Georgia,serif" font-size="18" font-style="italic">Ce qui m’inspire</text></g>
+<path d="M291 171l4 11 12 4-12 4-4 11-4-11-12-4 12-4zM159 29l3 8 8 3-8 3-3 8-3-8-8-3 8-3z" fill="#fff5cf"/>
+</svg>
+</div>
+<nav id="nav" aria-label="Étapes"></nav><section id="panel" class="panel"></section></main>
+<footer><details class="mobile-qr"><summary>Ouvrir sur mon téléphone</summary><figure style="margin:12px 0"><a href="https://ombaliz-collage-symbolique.ombaliz.chatgpt.site"><img src="flashcode-collage-symbolique.png" width="190" height="190" alt="QR code pour ouvrir Mon collage symbolique"></a><figcaption>Scannez le code avec l’appareil photo de votre téléphone. Le lien s’ouvre sans compte ni connexion.</figcaption></figure><a href="flashcode-collage-symbolique.png" download>Télécharger le QR code (PNG)</a></details><details><summary>À propos de l’exercice et de vos données</summary><p>Adaptation numérique du <a href="https://www.ifemdr.fr/wp-content/uploads/2011/10/Le-collage-de-la-famille-symbolique-2.pdf" target="_blank" rel="noopener">Collage de la famille symbolique d’Hélène Dellucci</a>. Vous pouvez commencer avec votre thérapeute, faire une pause ou passer une question. Si une figure suscite un malaise, vous pouvez la mettre de côté.</p><p>Vos textes et images restent dans ce navigateur. Sur un appareil partagé, effacez le brouillon après usage.</p><button id="erase">Effacer mon brouillon</button></details><p><a href="mailto:contact@ombaliz.com">contact@ombaliz.com</a></p></footer>
+<script src="pdf-lib.min.js"></script><script src="symbols.js"></script><script src="collage-pdf.js"></script>
+<script>
+const key='ombaliz-collage-v1', steps=['Choisir','Explorer','Découvrir','Composer','Dialoguer'], icons=['✦','🌿','🕯️','⛰️','🌊','🪶','☀️','🧭'];
+const qualities=['Courage','Douceur','Persévérance','Écoute','Calme','Créativité','Humour','Curiosité','Discernement','Patience','Souplesse','Tendresse'];
+const values=['Justice','Liberté','Solidarité','Respect','Authenticité','Dignité','Loyauté','Équité','Autonomie','Transmission','Entraide','Respect de soi'];
+let figures=[], contact=null, step=0, current=0, installEvent;
+const contactKey=key+'-contact';
+try{contact=JSON.parse(localStorage.getItem(contactKey)||'null')}catch{}
+try{figures=JSON.parse(localStorage.getItem(key)||'[]')}catch{}
+const panel=document.querySelector('#panel'), nav=document.querySelector('#nav');
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function save(){
+  if(database){const request=database.transaction('draft','readwrite');request.objectStore('draft').put(figures,'figures');request.onerror=storageWarning;return true}
+  try{localStorage.setItem(key,JSON.stringify(figures));return true}catch{storageWarning();return false}
+}
+let warned=false, database;
+function storageWarning(){if(!warned){warned=true;alert('Le navigateur ne peut pas enregistrer le brouillon. Gardez cette page ouverte et téléchargez le PDF avant de la fermer.')}}
+async function start(){
+  try{
+    database=await new Promise((resolve,reject)=>{
+      const request=indexedDB.open('ombaliz-collage',1);
+      request.onupgradeneeded=()=>request.result.createObjectStore('draft');
+      request.onsuccess=()=>resolve(request.result);
+      request.onerror=()=>reject(request.error);
+      request.onblocked=()=>reject(new Error('Stockage bloqué'));
+    });
+    const saved=await new Promise((resolve,reject)=>{
+      const request=database.transaction('draft').objectStore('draft').get('figures');
+      request.onsuccess=()=>resolve(request.result);
+      request.onerror=()=>reject(request.error);
+    });
+    if(Array.isArray(saved))figures=saved;
+    else if(figures.length)save();
+  }catch{database=undefined}
+  render();
+}
+function go(n){step=n;render();panel.querySelector('h2').focus();panel.scrollIntoView({block:'start'})}
+function heading(title,desc){return '<h2 tabindex="-1">'+title+'</h2><p>'+desc+'</p>'}
+function pick(){return '<label for="pick">Figure à explorer</label><select id="pick">'+figures.map((f,i)=>'<option value="'+i+'" '+(i===current?'selected':'')+'>'+esc(f.name)+'</option>').join('')+'</select>'}
+function field(k,label,placeholder){return '<label for="'+k+'">'+label+'</label><textarea data-key="'+k+'" id="'+k+'" placeholder="'+placeholder+'">'+esc(figures[current]?.[k])+'</textarea>'}
+function chips(k,list){return '<div class="chips">'+list.map(x=>'<button data-group="'+k+'" data-word="'+esc(x)+'" aria-pressed="'+(figures[current][k]||[]).includes(x)+'">'+esc(x)+'</button>').join('')+'</div>'}
+function figureArtwork(f,i){
+  const photo=f.image&&/^data:image\/jpeg;base64,/.test(f.image)?'<img alt="Illustration choisie pour '+esc(f.name)+'" src="'+esc(f.image)+'">':'';
+  const selected=selectedSymbols(f);
+  const drawings=selected.map(id=>{
+    const symbol=symbolsById.get(id);
+    return '<div class="symbol">'+symbolDrawing(symbol)+'<span class="symbol-caption">'+symbol[1]+' · '+symbol[2]+'</span></div>';
+  }).join('');
+  return photo+(drawings?'<div class="chosen-symbols">'+drawings+'</div>':photo?'':'<div class="symbol" aria-hidden="true">'+esc(f.icon||icons[i%icons.length])+'</div>');
+}
+function cards(full=false){return '<div class="grid">'+figures.map((f,i)=>'<article class="card">'+figureArtwork(f,i)+'<h3>'+esc(f.name)+'</h3>'+((f.q||[]).length?'<p><b>Qualités</b> · '+esc(f.q.join(', '))+'</p>':'')+((f.v||[]).length?'<p><b>Valeurs</b> · '+esc(f.v.join(', '))+'</p>':'')+[['why','Ce qui me touche'],['found','Ce que je retiens'],['message','Sa phrase de soutien'],['action','Mon petit pas']].filter(([k])=>full&&f[k]?.trim()).map(([k,l])=>'<p><b>'+l+'</b><br>'+esc(f[k])+'</p>').join('')+(full?'':'<div class="actions"><button data-edit="'+i+'">Modifier</button><button data-delete="'+i+'" aria-label="Retirer '+esc(f.name)+'">Retirer</button></div>')+'</article>').join('')+'</div>'}
+const scenes=[
+'<rect x="48" y="26" width="64" height="57" rx="5" fill="#eed2d7"/><circle cx="80" cy="48" r="12" fill="#ca8569"/><path d="M68 48q-4-20 13-17 13 0 11 16-11-2-14-10-4 8-10 11" fill="#493044"/><path d="M58 79q5-18 22-18t22 18" fill="#81394e"/>',
+'<path d="M80 75C34 50 62 25 80 45c18-20 46 5 0 30" fill="#a34f65"/><path d="M80 53v14m-7-7h14" stroke="#fff3d8" stroke-width="3" stroke-linecap="round"/>',
+'<circle cx="73" cy="50" r="18" fill="#c0d9cb" stroke="#21555e" stroke-width="5"/><path d="M87 64l19 17" stroke="#21555e" stroke-width="8" stroke-linecap="round"/><path d="M64 49q2-9 10-9" fill="none" stroke="white" stroke-width="3" stroke-linecap="round"/>',
+'<rect x="49" y="32" width="42" height="43" rx="3" fill="#c0d9cb" transform="rotate(-12 70 53)"/><rect x="78" y="38" width="34" height="43" rx="3" fill="#e6b9c4" transform="rotate(12 95 59)"/><path d="M59 66l12-18 12 16z" fill="#21555e"/><circle cx="96" cy="57" r="7" fill="#81394e"/>',
+'<path d="M48 37h62q7 0 7 7v22q0 7-7 7H78l-15 11 3-11H48q-7 0-7-7V44q0-7 7-7" fill="#c0d9cb"/><path d="M57 50h43M57 61h30" stroke="#21555e" stroke-width="4" stroke-linecap="round"/>'
+];
+function stageArt(index){
+  return '<svg class="stage-art" viewBox="0 0 160 110" aria-hidden="true"><rect x="29" y="16" width="104" height="83" rx="9" fill="#e8d9c3"/><rect x="25" y="12" width="104" height="83" rx="9" fill="#f8eedb"/><path d="M57 9h45l-3 15H55z" fill="#e0b774" opacity=".7"/>'+scenes[index]+'</svg>';
+}
+function render(){
+if(!contact||step===-1){
+  nav.innerHTML='';
+  panel.innerHTML=heading('Mes coordonnées','Renseignez vos coordonnées. Elles figureront sur le PDF que vous pourrez choisir de transmettre.')+
+  '<form id="contact-form"><label for="firstName">Prénom</label><input id="firstName" name="firstName" required maxlength="80" autocomplete="given-name" value="'+esc(contact?.firstName)+'"><label for="email">Adresse e-mail</label><input id="email" name="email" type="email" required maxlength="160" autocomplete="email" value="'+esc(contact?.email)+'"><label for="phone">Numéro de téléphone</label><input id="phone" name="phone" type="tel" required maxlength="30" autocomplete="tel" value="'+esc(contact?.phone)+'"><div class="actions"><button class="primary">Continuer →</button></div></form>';
+  return;
+}
+nav.innerHTML=steps.map((s,i)=>'<button data-go="'+i+'" '+(step===i?'aria-current="step"':'')+'>'+(i+1)+' · '+s+'</button>').join('')+'<button data-go="-1">Mes coordonnées</button>';
+let h=stageArt(step)+'<p class="eyebrow screen">Étape '+(step+1)+' sur 5</p>';
+if(step===0)h+=heading('Qui aimerais-je avoir à mes côtés ?', 'Pensez à une personne connue, à quelqu’un de votre entourage ou à un personnage de fiction. Une seule figure suffit pour commencer. Vous pouvez en ajouter autant que vous le souhaitez.')+'<div class="examples">Une ancienne prof qui vous encourageait, un héros de roman qui ose demander de l’aide, une amie qui sait vous écouter.</div><form id="add"><label for="name">Nom, prénom ou surnom</label><input id="name" required maxlength="80" placeholder="Ex. Ma prof de dessin"><button class="primary" style="margin-top:10px">Ajouter à mon collage</button></form>'+cards();
+else if(!figures.length)h+=heading('Ajoutez votre première figure','Vous pourrez ensuite explorer ce qu’elle représente pour vous.')+'<button class="primary" data-go="0">Choisir une figure</button>';
+else if(step===1)h+=heading('Qu’est-ce qui m’inspire chez cette personne ?', 'Une qualité décrit une manière d’être. Une valeur dit ce qui compte pour vous. Un même mot peut parfois jouer les deux rôles.')+pick()+'<details class="examples"><summary>Voir des exemples concrets</summary><ul><li>Mon ancienne prof m’a laissé chercher à mon rythme. Sa <b>patience</b> me touche et me rappelle l’importance de la <b>transmission</b>.</li><li>Une amie dit non calmement quand elle a besoin de repos. J’admire son <b>courage</b> et j’y retrouve le <b>respect de soi</b>.</li><li>Un personnage défend un élève mis à l’écart. Sa <b>détermination</b> me parle et j’y reconnais la <b>justice</b> et la <b>solidarité</b>.</li></ul></details><p><b>Ses qualités</b></p>'+chips('q',qualities)+'<div class="actions"><button data-custom="q">Ajouter ma qualité</button></div><p><b>Les valeurs qu’elle m’évoque</b></p>'+chips('v',values)+'<div class="actions"><button data-custom="v">Ajouter ma valeur</button></div>'+field('why','Ce qui me touche dans son exemple','Un geste, une scène, un souvenir…');
+else if(step===2)h+=heading('Je découvre un détail qui compte','Vous pouvez feuilleter un livre, revoir une scène, consulter un portrait ou repenser à un moment partagé. Gardez un détail qui vous aide à mieux comprendre votre choix.')+pick()+field('found','Ce que je retiens','Ex. Dans cette scène, elle demande de l’aide avant de prendre une décision.');
+else if(step===3)h+=heading('Je compose mon tableau','Pour chaque figure, choisissez un symbole ou ajoutez une image depuis votre appareil. Vous pouvez garder votre collage à portée de main ou dans un endroit discret.')+pick()+symbolPalette(figures[current])+'<div class="actions"><a href="https://www.google.com/search?tbm=isch&amp;q='+encodeURIComponent(figures[current].name)+'" target="_blank" rel="noopener noreferrer">Chercher une image de cette personnalité ↗</a></div><p class="hint">Pour une personnalité publique, ouvrez la recherche d’images, enregistrez l’image choisie, puis importez-la ci-dessous. Pour un proche, choisissez une photo de votre appareil.</p><label for="image">Importer une photo ou un dessin</label><input id="image" type="file" accept="image/*"><p id="image-status" role="status"></p><div id="board">'+cards(true)+'</div><div class="actions"><button data-go="0">Ajouter une autre figure</button><button class="primary" id="download">Télécharger le PDF</button><button id="mail">Envoyer par e-mail</button><button id="whatsapp">Envoyer par WhatsApp</button></div><p id="share-status" role="status" class="hint"></p><div id="share-next" class="actions"></div>';
+else h+=heading('Que me dirait cette figure ?', 'Si vous en avez envie, imaginez une parole de soutien dans une situation du quotidien. Vous pouvez aussi explorer cette étape avec votre thérapeute.')+pick()+field('message','Une phrase de soutien que j’imagine','Ex. Tu peux prendre le temps de réfléchir avant de répondre.')+field('action','Un petit geste que je pourrais essayer','Ex. Demander un jour de réflexion avant de m’engager.')+'<div class="actions"><button class="primary" data-go="3">Retrouver mon collage</button></div>';
+if(figures.length||step===0)h+='<div class="actions">'+(step>0?'<button data-go="'+(step-1)+'">Retour</button>':'')+(step<4&&figures.length?'<button class="primary" data-go="'+(step+1)+'">Continuer →</button>':'')+'</div>';
+panel.innerHTML=h;
+if(step===1)for(const [k,base] of [['q',qualities],['v',values]]){const b=panel.querySelector('[data-custom="'+k+'"]');b.parentElement.insertAdjacentHTML('beforebegin',chips(k,(figures[current][k]||[]).filter(x=>!base.includes(x))))}
+}
+document.addEventListener('click',e=>{
+const b=e.target.closest('button');if(!b)return;const d=b.dataset;
+if(d.go!==undefined)go(Number(d.go));
+if(d.edit!==undefined){current=Number(d.edit);const name=prompt('Nom de la figure',figures[current].name);if(name?.trim()){figures[current].name=name.trim().slice(0,80);save();render()}}
+if(d.delete!==undefined&&confirm('Retirer cette figure et ses réponses ?')){figures.splice(Number(d.delete),1);current=Math.max(0,Math.min(current,figures.length-1));save();render()}
+if(d.group){const f=figures[current], a=f[d.group]??=[];const i=a.indexOf(d.word);if(i<0)a.push(d.word);else a.splice(i,1);save();b.setAttribute('aria-pressed',i<0)}
+if(d.custom){const word=prompt(d.custom==='q'?'Votre qualité':'Votre valeur')?.trim().slice(0,60);if(word){const a=figures[current][d.custom]??=[];if(!a.includes(word))a.push(word);save();render();panel.querySelector('[data-custom="'+d.custom+'"]').focus()}}
+if(d.symbol&&symbolsById.has(d.symbol)){
+  const f=figures[current], ids=selectedSymbols(f), index=ids.indexOf(d.symbol);
+  const status=document.querySelector('#symbol-count');
+  if(index<0&&ids.length===symbolLimit){
+    status.textContent='Vous avez choisi trois symboles. Retirez-en un pour en ajouter un autre.';
+  }else{
+    if(index<0)ids.push(d.symbol);else ids.splice(index,1);
+    f.symbolIds=ids;
+    delete f.symbolId;
+    save();
+    b.setAttribute('aria-pressed',index<0);
+    status.textContent=symbolCount(ids);
+    document.querySelector('#board').innerHTML=cards(true);
+  }
+}
+if(['download','mail','whatsapp'].includes(b.id))exportCollage(b.id);
+if(b.id==='erase'&&confirm('Effacer toutes les figures et réponses de cet appareil ?')){figures=[];contact=null;current=0;try{localStorage.removeItem(contactKey);localStorage.removeItem(key)}catch{}save();go(0)}
+if(b.id==='install'){if(installEvent){installEvent.prompt();installEvent=null}else alert('iPhone : ouvrez le lien dans Safari, touchez Partager puis Sur l’écran d’accueil. Android : ouvrez le menu de Chrome puis Installer l’application ou Ajouter à l’écran d’accueil.')}
+});
+document.addEventListener('submit',e=>{
+if(e.target.id==='contact-form'){
+  e.preventDefault();
+  const data=Object.fromEntries([...new FormData(e.target)].map(([k,v])=>[k,v.trim()]));
+  const name=e.target.elements.firstName, phone=e.target.elements.phone;
+  name.setCustomValidity(data.firstName?'':'Saisissez votre prénom.');
+  phone.setCustomValidity(/^[+\d().\s-]+$/.test(data.phone)&&data.phone.replace(/\D/g,'').length>=7?'':'Saisissez un numéro de téléphone valide.');
+  if(!e.target.reportValidity())return;
+  contact=data;
+  try{localStorage.setItem(contactKey,JSON.stringify(contact))}catch{storageWarning()}
+  go(0);
+  return;
+}
+if(e.target.id!=='add')return;e.preventDefault();const name=document.querySelector('#name').value.trim();if(!name)return;figures.push({name});current=figures.length-1;save();render();document.querySelector('#name').focus()});
+panel.addEventListener('input',e=>{e.target.setCustomValidity?.('');if(e.target.dataset.key){figures[current][e.target.dataset.key]=e.target.value;save()}});
+panel.addEventListener('change',async e=>{if(e.target.id==='pick'){current=Number(e.target.value);render();document.querySelector('#pick').focus()}if(e.target.id!=='image'||!e.target.files[0])return;const f=figures[current], status=document.querySelector('#image-status'), file=e.target.files[0], url=URL.createObjectURL(file);try{const img=new Image();img.src=url;await img.decode();const c=document.createElement('canvas'), scale=Math.min(1,650/Math.max(img.width,img.height));c.width=Math.max(1,Math.round(img.width*scale));c.height=Math.max(1,Math.round(img.height*scale));const ctx=c.getContext('2d');ctx.fillStyle='#fff';ctx.fillRect(0,0,c.width,c.height);ctx.drawImage(img,0,0,c.width,c.height);f.image=c.toDataURL('image/jpeg',.78);save();const board=document.querySelector('#board');if(board)board.innerHTML=cards(true);status.textContent='Image ajoutée.'}catch{status.textContent='Image illisible. Essayez un fichier JPEG ou PNG.'}finally{URL.revokeObjectURL(url)}});
+window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();installEvent=e});
+if('serviceWorker'in navigator)navigator.serviceWorker.register('./sw.js').catch(()=>{});
+async function exportCollage(mode){
+  const status=document.querySelector('#share-status'), next=document.querySelector('#share-next');
+  const buttons=['download','mail','whatsapp'].map(id=>document.getElementById(id));
+  buttons.forEach(button=>button.disabled=true);
+  next.replaceChildren();
+  status.textContent='Préparation du PDF…';
+  try{
+    const file=await makeCollagePdf(figures.map((f,i)=>({...f,icon:f.icon||icons[i%icons.length]})),{...contact});
+    function download(){
+      const url=URL.createObjectURL(file);
+      const link=document.createElement('a');link.href=url;link.download=file.name;link.click();
+      setTimeout(()=>URL.revokeObjectURL(url),60000);
+    }
+    if(mode==='download'){download();status.textContent='PDF prêt.';return}
+    if(mode==='whatsapp'&&navigator.canShare?.({files:[file]})){
+      const share=document.createElement('button');share.textContent='Choisir WhatsApp et le destinataire';
+      share.onclick=async()=>{
+        try{await navigator.share({files:[file]})}catch(error){if(error.name!=='AbortError')download()}
+      };
+      next.append(share);
+      status.textContent='Dans le menu de partage, choisissez WhatsApp puis le contact Ombaliz Thérapie (+33 6 26 75 19 17).';
+    }else{
+      download();
+      const link=document.createElement('a');
+      link.href=mode==='mail'?'mailto:contact@ombaliz.com?subject=Mon%20collage%20symbolique':'https://wa.me/33626751917';
+      link.textContent=mode==='mail'?'Ouvrir mon application e-mail':'Ouvrir la conversation WhatsApp';
+      if(mode==='whatsapp'){link.target='_blank';link.rel='noopener noreferrer'}
+      next.append(link);
+      status.textContent='Le PDF a été téléchargé. Ouvrez votre messagerie puis ajoutez le PDF en pièce jointe avant d’envoyer.';
+    }
+  }catch{status.textContent='Le PDF n’a pas pu être généré. Réessayez après avoir rechargé la page.'}
+  finally{buttons.forEach(button=>button.disabled=false)}
+}
+start();
+</script></html>
